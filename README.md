@@ -36,6 +36,14 @@ Despite the flexibility of cva, there may still be instances when the developer 
 
 Here is a great explanation: [twMerge](https://github.com/dcastil/tailwind-merge/blob/v2.2.2/docs/what-is-it-for.md)  
 
+#### Tip  
+If using VS Code with the Tailwindcss IntelliSense extension, you can add the following to the settings.json file. This will mean the intellisense will work when populating the tailwind variants in cva styles menu.  
+
+Copy it [here](https://www.tailwind-variants.org/docs/getting-started)
+
+![image](https://github.com/johnhm22/nextjs-revalidation/assets/71333679/9e8cf4a3-3542-4b23-b02b-a306850d9d68)
+
+
 
 ### Running the code  
 * Clone the repository to your local machine
