@@ -26,6 +26,16 @@ Below are the server-side actions that have been coded and which call either rev
 ![image](https://github.com/johnhm22/nextjs-revalidation/assets/71333679/95bcad19-0553-45a1-9c1d-6b2f5569e8cb)
 
 
+### Class-variance-authority (cva) and twMerge  
+This coding exercise has been used as an opportunity to become familiar with these two libraries.  
+
+[CVA](https://cva.style/docs) takes the hassle out of customising UI components such as a button. In simple terms, a menu of different styles can be defined in a single place and when each button, for example, is required as part of a component various attributes can be defined which correspond to the menu of styles. Thus styling can become highly customised, but still standardised and yet, at the same time, easy to code.  
+
+Despite the flexibility of cva, there may still be instances when the developer wants to change the className as a one-off and this may conflict with the className defined in the style menu of cva. What is desired is that the one-off className overrides the className of cva. However, under normal circumstances the way css orders styles (css cascade) the desired result may not be the actual result; twMerge is a simple library that ensures what the developer wants is what the developer gets!
+
+Here is a great explanation: [twMerge](https://github.com/dcastil/tailwind-merge/blob/v2.2.2/docs/what-is-it-for.md)
+
+
 
 ### Reference  
 The code is based on an exercise produced by [Hamad Bahram](https://www.youtube.com/watch?v=-mPm2IRkacM) who I rate highly.  
