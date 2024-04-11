@@ -34,7 +34,22 @@ This coding exercise has been used as an opportunity to become familiar with the
 
 Despite the flexibility of cva, there may still be instances when the developer wants to change the className as a one-off and this may conflict with the className defined in the style menu of cva. What is desired is that the one-off className overrides the className of cva. However, under normal circumstances the way css orders styles (css cascade) the desired result may not be the actual result; twMerge is a simple library that ensures what the developer wants is what the developer gets!
 
-Here is a great explanation: [twMerge](https://github.com/dcastil/tailwind-merge/blob/v2.2.2/docs/what-is-it-for.md)
+Here is a great explanation: [twMerge](https://github.com/dcastil/tailwind-merge/blob/v2.2.2/docs/what-is-it-for.md)  
+
+
+### Running the code  
+* Clone the repository to your local machine
+* Set up api endpoints for users and todos using mockapi.io (the todos endpoint returned an array of objects with keys of name and status; the users endpoint provided keys of name and city)
+* Define the mockapi endpoint in a .env.local file
+* In the terminal, Run npm install to install all the libraries
+* Again in the terminal, run npm run dev to start the server
+* Open the browser at http://localhost:3000
+* View the data in the browser then change the configuration of the endpoints in mockapi
+* Refresh the browser and note there is not change
+* Select the "Revalidate Users" button and see the user data update as the server side cache is purged
+* Do the same for "Revalidate Todos"
+* Reconfigue both endpoints again and select the button "Revalidate the entire path" and see both user and todo data refresh together
+* Play around with the cva styles menu and adding in 'one-off' classNames directly into the button tag to see the effect
 
 
 
