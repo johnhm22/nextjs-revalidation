@@ -14,7 +14,13 @@ In this case an api was set up to get user data and another for todo data. This 
 
 #### Revalidation  
 Three buttons were defined; one to revalidate the path ('/') and one each to revalidate users and todos.  
-On the initial loading of data, users and todos were presented in the frontend and were fresh as the data had been retrieved from the database. The configuration of the mockapi is then changed, for example, to send different numbers of users and todos. Upon reloading the browser one would expect (or hope) that a new set of data is seen, but this is not the case as the original or stale data is held in a server cache; no amount of resetting and purging in the browser has an effect.  
+On the initial loading of data, users and todos were presented in the frontend and were fresh as the data had been retrieved from the database. The configuration of the mockapi is then changed, for example, to send different numbers of users and todos.  This is achieved in the mockapi dashboard by updating the number of users or todos as shown below.  
+
+
+![image](https://github.com/user-attachments/assets/b514b670-0bff-4e86-adbc-36b2746dc6b7)
+
+
+Upon reloading the browser perhaps one would expect that a new set of data is seen with the new number of users or todos, but this is not the case as the original, stale data is held in a server cache; no amount of resetting and purging in the browser has an effect.  
 
 To solve this problem, the developer can use revalidatePath or revalidateTag.  
 
